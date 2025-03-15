@@ -13,7 +13,7 @@ except RuntimeError:
 
 # Load the trained model
 
-model_path = '/home/talha/Downloads/model.pth' # Change it accordingly
+model_path = 'Model/model.pth' # Change it accordingly
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 model = ViTForImageClassification.from_pretrained("google/vit-base-patch16-224", num_labels=5, ignore_mismatched_sizes=True)
